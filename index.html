@@ -6,52 +6,63 @@
     
     <base href="/Htsite/">
 
-    <title>Xeyal | Harmonoid Portfolio</title>
+    <title>XeyalMusic | Portfolio</title>
     
     <meta name="description" content="Xeyal tərəfindən idarə olunan musiqi kitabxanası layihəsi.">
-    <meta property="og:title" content="Xeyal - Harmonoid Layihəsi">
-    <meta property="og:url" content="https://xeyaldi.github.io/Htsite/">
+    <meta property="og:title" content="XeyalMusic - Harmonoid Layihəsi">
 
-    <link rel="stylesheet" href="./assets/css/styles.61217b09.css">
-    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="assets/css/styles.61217b09.css">
+    <link rel="icon" href="favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Roboto+Condensed:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap">
+
+    <style>
+        /* Əgər CSS faylı hələ də yüklənməsə, bu minimal stillər saytı səliqəli göstərəcək */
+        body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background-color: #f4f4f7; }
+        .navbar { background: #fff; padding: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .navbar__brand { text-decoration: none; color: #3578e5; font-weight: bold; font-size: 1.2rem; }
+        .navbar__item { text-decoration: none; color: #444; margin-left: 20px; font-size: 0.9rem; }
+        .main-wrapper { padding-top: 120px; text-align: center; min-height: 80vh; }
+        .hero-title { font-size: 3rem; color: #1c1e21; margin-bottom: 10px; }
+        .hero-subtitle { font-size: 1.2rem; color: #606770; margin-bottom: 30px; }
+        .github-btn { background: #24292e; color: white; padding: 12px 25px; border-radius: 8px; display: inline-block; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .github-btn:hover { background: #444; transform: translateY(-2px); }
+    </style>
 </head>
 
 <body class="navigation-with-keyboard">
     <div id="__docusaurus">
-        <nav class="navbar navbar--fixed-top">
-            <div class="navbar__inner">
+        <nav class="navbar">
+            <div class="navbar__inner" style="max-width: 1200px; margin: 0 auto; width: 100%; display: flex; justify-content: space-between;">
                 <div class="navbar__items">
-                    <a class="navbar__brand" href="./">
-                        <b class="navbar__title">XEYALDI Portfolio</b>
+                    <a class="navbar__brand" href="index.html">
+                        XEYALMUSIC
                     </a>
-                    <a class="navbar__item navbar__link" href="./downloads">Yükləmələr</a>
+                    <a class="navbar__item" href="downloads">Yükləmələr</a>
                 </div>
-                <div class="navbar__items navbar__items--right">
-                    <a href="https://github.com/xeyaldi" target="_blank" class="navbar__item navbar__link header-github-link">GitHub</a>
+                <div class="navbar__items">
+                    <a href="https://github.com/xeyaldi" target="_blank" class="navbar__item">GitHub</a>
                 </div>
             </div>
         </nav>
 
         <main class="main-wrapper">
-            <div class="backgroundParent_xohB" style="padding-top: 100px; text-align: center;">
-                <h1>Xeyal - Harmonoid</h1>
-                <p>Musiqi kitabxananızı gözəl və rəngli interfeyslə idarə edin.</p>
+            <div class="container">
+                <h1 class="hero-title">XeyalMusic</h1>
+                <p class="hero-subtitle">Musiqi kitabxananızı gözəl və rəngli interfeyslə idarə edin.</p>
                 
-                <div class="desktop_KaQm">
-                    <a style="text-decoration:none" href="https://github.com/xeyaldi/Htsite" target="_blank">
-                        <div class="button_yIAq" style="background: #24292e; color: white; padding: 10px 20px; border-radius: 5px; display: inline-block;">
-                            Star on GitHub
-                        </div>
+                <div class="actions">
+                    <a href="https://github.com/xeyaldi/Htsite" target="_blank" class="github-btn">
+                        <span class="material-icons" style="vertical-align: middle; font-size: 18px; margin-right: 5px;">star</span>
+                        Star on GitHub
                     </a>
                 </div>
             </div>
         </main>
     </div>
 
-    <script src="./assets/js/runtime~main.557fa995.js"></script>
-    <script src="./assets/js/main.1deae158.js"></script>
+    <script src="assets/js/runtime~main.557fa995.js"></script>
+    <script src="assets/js/main.1deae158.js"></script>
 </body>
 </html>
